@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_02_192252) do
+ActiveRecord::Schema.define(version: 2023_03_03_062517) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2023_03_02_192252) do
     t.string "genre"
     t.string "description"
     t.integer "user_id"
+    t.string "image"
     t.index ["user_id"], name: "index_books_on_user_id"
   end
 
@@ -35,8 +36,6 @@ ActiveRecord::Schema.define(version: 2023_03_02_192252) do
     t.index ["book_id"], name: "index_users_on_book_id"
   end
 
-  add_foreign_key "books", "users"
   add_foreign_key "reviews", "books"
   add_foreign_key "reviews", "users"
-  add_foreign_key "users", "books"
 end

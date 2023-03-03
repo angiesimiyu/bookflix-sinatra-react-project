@@ -6,7 +6,7 @@ class ReviewsController < ApplicationController
 
     get "/reviews" do
         reviews = Review.all
-        reviews.to_json
+        reviews.to_json(include: [:user, :book])
     end
 
     # Post/Add Reviews
