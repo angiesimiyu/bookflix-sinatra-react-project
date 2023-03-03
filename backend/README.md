@@ -18,7 +18,7 @@ In this project, I was able to create a website for viewing books. The user will
 
 ## Live Link
 Or you can access the backend server directly via this [LINK.](http://localhost:9292/)
-Or you can access the frontend server directly via this [LINK.](http://localhost:3000/)
+Or you can access the frontend server directly via this [LINK.](https://github.com/Anita-Kahenya/phase-2-project-bookflix)
 *****
 
 
